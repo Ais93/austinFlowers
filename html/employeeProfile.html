@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Lato:700italic,700,300' rel='stylesheet' type='text/css'>
+    <title>Employee Profile</title>
+  </head>
+   <body>
+
+<link href = "../css/main.css" rel = "stylesheet" type = "text/css">
+
+<ul class="navbar" id="navcolour">
+				<li><a href='index.html'>Home</a></li>
+				<div class="dropdown">
+				<span><li><a id="shop" href='#'>Shop</a></li></span>
+					<div class="drop-links"  id="dropcolour">
+						<a href='index.html#occ'>Occasions</a>
+						<a href='bouquet.html'>Bouquets</a>
+						<a href='customFlowerPage.html'>Custom</a>
+					</div>
+				</div>
+				<li><a href='index.html#about'>About</a></li>
+				<li><a href='index.html#contact'>Contact</a></li>
+				<li><a id="signIn" href='#'>Sign In</button></a></li>
+	</ul>
+		<!--W3Schools Example on Modal Boxes http://www.w3schools.com/howto/howto_css_modals.asp -->
+		<div id="login" class="modal">
+			<div class="formBox">
+				<div id="tabBox">
+					<a href="#" id="si" class="tab">Sign In</a>
+					<a href="#" id="su" class="tab">Register</a>
+				</div>
+				<form id = "lForm" name="lForm" action="">	
+					<input class = "formInput" name="email" type="email" placeholder="Email" value="">
+					<input class = "formInput" name="psw" type="password" placeholder="Password" value="">
+					<button onclick="validate()">Sign In</button>
+				</form>
+
+				<form id="rForm" name="rForm" action="">
+					<input class = "formInput" name="fullname" type="text" placeholder="Full Name" value="">
+					<textarea class = "formInput" name="address" type="textarea" rows="3" cols="10" placeholder="Delivery Address" value=""></textarea>
+					<input class = "formInput" name="email" type="email" placeholder="Email" value="">
+					<input class = "formInput" name="psw" type="password" placeholder="Create Password">
+					<button onclick="validate2()">Register</button>
+				</form>
+
+			</div>
+
+		</div>
+
+		<div class="Info">
+			<h1><strong>Info</h1></strong>
+			<p>
+				<strong>Full Name:</strong>
+				<span>Joe McGann</span>
+			</p>
+			<p>
+				<strong>Email:</strong>
+				<span>joemcgann@gmail.com</span>
+			</p>
+			<p>
+				<strong>Address:</strong>
+				<span>Blackrock,
+				Dublin 4, 
+				Dublin.</span>
+			</p>
+		</div>
+		
+		<div class="Info">
+			<div id="center"></div>
+			<h1><strong>Customers</h1></strong>
+			<p>
+				<a href="customerProfilePage.html" target ="_blank">Customer Profile</a>
+			</p>
+		</div>
+		
+		<div class="Info">
+			<div id="center"></div>
+			<h1><strong>Stock</h1></strong>
+			<p>
+				<strong>Item Name:</strong>
+				<span>Red Rose Service Arrangement</span>
+			</p>
+			<p>
+				<strong>Number Left:</strong>
+				<span>19</span>
+			</p>
+		</div>
+			
+<footer>
+			<div id="footerPic">
+					<img src="../images/austin.png">
+				</div>
+
+				<div class="columns">
+						<h3>Connect With Us</h3>
+						<a href="https://www.facebook.com/Austin-Flowers-178449139192413/" target="_blank">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="https://twitter.com/yeahhhhh_baby" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+				</div>
+
+				<div class="columns">
+					<h3> Links</h3>
+					<ul>
+						<li><a href="termsAndConditions.html">Terms & Conditions</a></li>
+						<li><a href="#">Site Map</a></li>
+					</ul>
+				</div>
+
+				<div class="columns">
+					<h3> The Team</h3>
+					<ul>
+						<li>Aisling</li>
+						<li>Joe</li>
+						<li>Tom</li>
+					</ul>
+				</div>
+		</footer>
+<!--jquery and javascript links-->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../main.js"></script>
+
+</body>
+</html>

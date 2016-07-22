@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Austin Flowers | Funeral</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:700italic,700,300' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <body>
+
+  	<ul class="navbar" id="navcolour">
+				<li><a href='index.html'>Home</a></li>
+				<div class="dropdown">
+				<span><li><a id="shop" href='#'>Shop</a></li></span>
+					<div class="drop-links" id="dropcolour">
+						<a href='index.html#occ'>Occasions</a>
+						<a href='bouquet.html'>Bouquets</a>
+						<a href='customFlowerPage.html'>Custom</a>
+					</div>
+				</div>
+				<li><a href='index.html#about'>About</a></li>
+				<li><a href='index.html#contact'>Contact</a></li>
+				<li><a id="signIn" href='#'>Sign In</button></a></li>
+		</ul>
+		<!--W3Schools Example on Modal Boxes http://www.w3schools.com/howto/howto_css_modals.asp -->
+		<div id="login" class="modal">
+			<div class="formBox">
+				<div id="tabBox">
+					<a href="#" id="si" class="tab">Sign In</a>
+					<a href="#" id="su" class="tab">Register</a>
+				</div>
+				<form id = "lForm" name="lForm" action="">	
+					<input class = "formInput" name="email" type="email" placeholder="Email" value="">
+					<input class = "formInput" name="psw" type="password" placeholder="Password" value="">
+					<button onclick="validate()">Sign In</button>
+				</form>
+
+				<form id="rForm" name="rForm" action="">
+					<input class = "formInput" name="fullname" type="text" placeholder="Full Name" value="">
+					<textarea class = "formInput" name="address" type="textarea" rows="3" cols="10" placeholder="Delivery Address" value=""></textarea>
+					<input class = "formInput" name="email" type="email" placeholder="Email" value="">
+					<input class = "formInput" name="psw" type="password" placeholder="Create Password">
+					<button onclick="validate2()">Register</button>
+				</form>
+
+			</div>
+
+		</div>
+
+	<div class="purchase">
+	
+		<ul>
+			<li><img id="d1" src="../images/funeralb12.jpg" width="150" height="250">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Red rose service arrangement</b></h3>
+				<p><a id = "readmore1" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="TDQMCTT33ZBBJ">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+			
+			
+			<li><img id="d2" src="../images/funeralb11.jpg" alt="Smiley face" height="250" width="150">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Butterfly tribute</b></h3>
+				<p><a id = "readmore2" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="FLW3F6FBYHX72">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+			
+			
+			<li><img id="d3" src="../images/funeralb10.jpg" width="150" height="250">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Classic wreath red and green</b></h3>
+				<p><a id = "readmore3" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="B34MGZWMWVA22">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+			
+			
+			<li><img id="d4" src="../images/funeralb9.jpg" alt="Smiley face" height="250" width="150">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Classic posy vibrant</b></h3>
+				<p><a id = "readmore4" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="BSEHC5Q5ATFRL">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+		</ul>
+	</div>	
+	
+	<!--Pop up for individual flowers-->
+	<div id="words1" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big1.jpg">
+	
+		<h2>Red rose service arrangement</h2>
+		<p><i>
+			Brilliant red roses are elegantly displayed in a 
+			white plastic urn and accented with lush greens and 
+			red satin ribbon to create a beautiful tribute to 
+			be displayed at the service
+		</i></p>
+		
+		<p>Price: €89.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="TDQMCTT33ZBBJ">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+	</div>
+	
+	<div id="words2" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big2.jpg">
+	
+		<h2>Butterfly tribute</h2>
+		<p><i>
+			An array of pinks, lilacs, lime green and white make up this beautiful 
+			butterfly-shaped floral tribute. The display features spray chrysanthemums, 
+			pink and white roses, blue eryngium, lilac statice and lime green spray 
+			chrysanthemums.
+
+		</i></p>
+		
+		<p>Price: €42.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="FLW3F6FBYHX72">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="words3" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big8.jpg">
+	
+		<h2>Classic wreath red and green</h2>
+		<p><i>
+			A classic selection of flowers including carnations and 
+			spray chrysanthemums in reds and greens are nestled into 
+			this traditional circular wreath.
+		</i></p>
+		
+		<p>Price: €69.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="B34MGZWMWVA22">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="words4" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big4.jpg">
+	
+		<h2>Classic posy vibrant</h2>
+		<p><i>
+			A classic selection in vibrant shades including 
+			large-headed roses, freesias, lisianthus and 
+			spray chrysanthemums presented in a posy design.
+		</i></p>
+		
+		<p>Price: €49.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="BSEHC5Q5ATFRL">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+		
+		
+	<div class="purchase">
+		<ul>
+			<li><img id="d5" src="../images/funeralb8.jpg" width="150" height="250">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Mixed basket pink and lilac</b></h3>
+				<p><a id = "readmore5" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="9Q3MSGARRZGN6">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+
+			
+			<li><img id="d6" src="../images/funeralb7.jpg" alt="Smiley face" height="250" width="150">
+			<div class="contenthover">
+				<img src="images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Simple rose sheaf pink</b></h3>
+				<p><a id = "readmore6" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="HZ8P9C9NFWLSN">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+			
+			
+			<li><img id="d7" src="../images/funeralb6.jpg" width="150" height="250">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Mixed rose heart pink and yellow</b></h3>
+				<p><a id = "readmore7" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="E3ZEALF9UCNXL">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+
+						
+			<li><img id="d8" src="../images/funeralb5.jpg" alt="Smiley face" height="250" width="150">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Rose and lily wreath vibrant</b></h3>
+				<p><a id = "readmore8" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="U69PLDQYJHVT4">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+		</ul>
+	</div>	
+	
+	<!--Pop up for individual flowers-->
+	<div id="words5" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big3.jpg">
+	
+		<h2>Mixed basket pink and lilac</h2>
+		<p><i>
+			A traditional trug basket filled with roses, 
+			veronica, statice and scented freesias in 
+			pinks and lilacs.
+		</i></p>
+		
+		<p>Price: €24.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="9Q3MSGARRZGN6">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="words6" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big12.jpg">
+	
+		<h2>Simple rose sheaf pink</h2>
+		<p><i>
+			6 large-headed pink roses are presented with aralia 
+			leaves, French ruscus and eucalyptus to create this 
+			simple, classic rose sheaf.
+		</i></p>
+		
+		<p>Price: €19.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="HZ8P9C9NFWLSN">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="words7" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big6.jpg">
+	
+		<h2>Mixed rose heart pink and yellow</h2>
+		<p><i>
+			Large-headed roses in pink, yellow and cream and short-Stem 
+			roses in white are nestled into an solid heart shape amongst 
+			asparagus fern and pittosporum.
+		</i></p>
+		
+		<p>Price: €49.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="E3ZEALF9UCNXL">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="words8" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big9.jpg">
+	
+		<h2>Rose and lily wreath vibrant</h2>
+		<p><i>
+			Lily and large-headed roses in orange are nestled amongst 
+			yellow germini, green spray chrysanthemums and purple 
+			lisianthus in this vibrant circular wreath.
+		</i></p>
+		
+		<p>Price: €44.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="U69PLDQYJHVT4">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div class="purchase">
+		<ul>
+			<li><img id="d9" src="../images/funeralb4.jpg" width="150" height="250">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Simple rose sheaf yellow</b></h3>
+				<p><a id = "readmore9" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="B549RU9C3DJF6">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+	
+						
+			<li><img id="d10" src="../images/funeralb3.jpg" alt="Smiley face" height="250" width="150">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Simple rose sheaf red</b></h3>
+				<p><a id = "readmore10" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="5NKTCKWNKQH8S">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+			
+			
+			<li><img id="d11" src="../images/funeralb2.jpg" width="150" height="250">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Classic wreath blue and white</b></h3>
+				<p><a id = "readmore11" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="GD3MKCQVDV52N">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+
+						
+			<li><img id="d12" src="../images/funeralb1.jpg" alt="Smiley face" height="250" width="150">
+			<div class="contenthover">
+				<img src="../images/austinflowerslogo.png" style='border:0' height="70" width="110">
+				<h3><b>Red rose and cornation heart</b></h3>
+				<p><a id = "readmore12" href="#" class="mybutton">Read more.....</a></p>
+			</div>
+			<br>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="C2AND5MY9A2FJ">
+				<input type="image" src="../images/addtocart-green-4.png" class='btn-cart' style='border:0' alt="Smiley face" height="60" width="110">
+			</form>
+			</li>
+		</ul>
+	</div>
+	
+	<!--Pop up for individual flowers-->
+	<div id="words9" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big10.jpg">
+	
+		<h2>Simple rose sheaf yellow</h2>
+		<p><i>
+			6 large-headed yellow roses are presented with aralia leaves, 
+			French ruscus and eucalyptus to create this simple, classic 
+			rose sheaf.
+		</i></p>
+		
+		<p>Price: €19.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="B549RU9C3DJF6">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="words10" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big11.jpg">
+	
+		<h2>Simple rose sheaf red</h2>
+		<p><i>
+			6 large-headed red roses are presented with aralia leaves, 
+			French ruscus and eucalyptus to create this simple, classic 
+			rose sheaf.
+		</i></p>
+		
+		<p>Price: €19.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="5NKTCKWNKQH8S">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="words11" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big7.jpg">
+	
+		<h2>Classic wreath blue and white</h2>
+		<p><i>
+			A classic selection of flowers including irises, carnations 
+			and spray chrysanthemums in blues and whites are nestled into 
+			this traditional circular wreath.
+		</i></p>
+		
+		<p>Price: €29.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="GD3MKCQVDV52N">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="words12" class="modal">
+		<a class="close" href="#">Close</a>
+		<img class="inset" src="../images/big5.jpg">
+	
+		<h2>Red rose and cornation heart</h2>
+		<p><i>
+			A traditional heart-shaped design including 
+			roses and spray carnations in rich red 
+			complemented by choice foliage.
+		</i></p>
+		
+		<p>Price: €39.99</p>
+		<div class="line">	
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="C2AND5MY9A2FJ">
+				<input type="image" src="../images/addtocart-green-4.png" ;style='border:0' "float:left;" alt="Smiley face" height="60" width="110">
+			</form>
+		</div>
+		
+	</div>
+
+	<footer>
+			<div id="footerPic">
+					<img src="../images/austin.png">
+				</div>
+
+				<div class="columns">
+						<h3>Connect With Us</h3>
+						<a href="https://www.facebook.com/Austin-Flowers-178449139192413/" target="_blank">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="https://twitter.com/yeahhhhh_baby" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+				</div>
+
+				<div class="columns">
+					<h3> Links</h3>
+					<ul>
+						<li><a href="termsAndConditions.html">Terms & Conditions</a></li>
+						<li><a href="#">Site Map</a></li>
+					</ul>
+				</div>
+
+				<div class="columns">
+					<h3> The Team</h3>
+					<ul>
+						<li>Aisling</li>
+						<li>Joe</li>
+						<li>Tom</li>
+					</ul>
+				</div>
+		</footer>
+
+	<!--jquery and javascript links-->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../main.js"></script>
+<script src="../jquery.contenthover.js"></script> 
+	
+	<!--javascript for content hover jquery (would not work in js file)-->
+	<script>
+		$('#d1').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d2').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d3').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d4').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d5').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d6').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d7').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d8').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d9').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d10').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d11').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+
+		$('#d12').contenthover({
+			overlay_background:'#000',
+			overlay_opacity:0.8
+		});
+		
+		//javascript for individual flower popups (would not work in js file)
+		$('#readmore1').click(function(){
+			$('#words1').fadeIn();
+		});
+		
+		$('#readmore2').click(function(){
+			$('#words2').fadeIn();
+		});
+		
+		$('#readmore3').click(function(){
+			$('#words3').fadeIn();
+		});
+		
+		$('#readmore4').click(function(){
+			$('#words4').fadeIn();
+		});
+		
+		$('#readmore5').click(function(){
+			$('#words5').fadeIn();
+		});
+		
+		$('#readmore6').click(function(){
+			$('#words6').fadeIn();
+		});
+		
+		$('#readmore7').click(function(){
+			$('#words7').fadeIn();
+		});
+		
+		$('#readmore8').click(function(){
+			$('#words8').fadeIn();
+		});
+		
+		$('#readmore9').click(function(){
+			$('#words9').fadeIn();
+		});
+		
+		$('#readmore10').click(function(){
+			$('#words10').fadeIn();
+		});
+		
+		$('#readmore11').click(function(){
+			$('#words11').fadeIn();
+		});
+		
+		$('#readmore12').click(function(){
+			$('#words12').fadeIn();
+		});
+		
+		//close pop ups
+		$( ".close" ).click(function() {
+       		$('.modal').hide();
+    	});
+	</script>
+  </body>
+</html>
+	
